@@ -84,9 +84,10 @@ show_train_history(train_history,'accuracy','val_accuracy')
 show_train_history(train_history,'loss','val_loss')
 '''
 
-
-
-
-
-
-
+'''
+scores = model.evaluate(x=test_Features,
+                       y=test_Label)
+scores[1]
+#check this model accuracy
+#!not final accuracy
+'''
