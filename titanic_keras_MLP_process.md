@@ -78,8 +78,23 @@ Epoch 2/30<br>
   0s - loss: 0.4455 - accuracy: 0.7946 - val_loss: 0.4165 - val_accuracy: 0.8173<br>
 Epoch 30/30<br>
   0s - loss: 0.4522 - accuracy: 0.7914 - val_loss: 0.4162 - val_accuracy: 0.8173<br>
-
-#Check  
+  
+# Check  
+  
+import matplotlib.pyplot as plt
+def show_train_history(Train_history, train, validation):
+    plt.plot(train_history.history[train])
+    plt.plot(train_history.history[validation])
+    plt.title('Train History')
+    plt.ylabel('train')
+    plt.xlabel('Epoch')
+    plt.legend(['train', 'validation'], loc='center right')
+    plt.show()
+  
+show_train_history(train_history,'accuracy','val_accuracy')  
+  
+show_train_history(train_history,'loss','val_loss')  
+  
 scores = model.evaluate(x=test_Features,  
                        y=test_Label)  
 Out:  
