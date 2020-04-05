@@ -25,6 +25,8 @@ msk = numpy.random.rand(len(all_df)) < 0.8 #8:2 to msk
 train_df = all_df[msk] #train 80%
 test_df = all_df[~msk] #test 20%
 
+
+'''
 def PreprocessData(raw_df):
     df=raw_df.drop(['name'], axis=1)
     age_mean = df['age'].mean()
@@ -42,6 +44,5 @@ def PreprocessData(raw_df):
     scaledFeatures=minmax_scale.fit_transform(Features)    
     
     return scaledFeatures,Label
-
-
+'''
 
