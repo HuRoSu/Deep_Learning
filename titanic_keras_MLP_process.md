@@ -79,7 +79,7 @@ Epoch 2/30<br>
 Epoch 30/30<br>
   0s - loss: 0.4522 - accuracy: 0.7914 - val_loss: 0.4162 - val_accuracy: 0.8173<br>
 
-#Check
+#Check  
 scores = model.evaluate(x=test_Features,  
                        y=test_Label)  
 Out:  
