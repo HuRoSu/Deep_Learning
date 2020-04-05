@@ -70,11 +70,11 @@ Solution is pip install h5py==2.8.0rc1
 Out:<br>
 Train on 930 samples, validate on 104 samples<br>
 Epoch 1/30<br>
- - 1s - loss: 0.6899 - accuracy: 0.5774 - val_loss: 0.6707 - val_accuracy: 0.7885<br>
+  1s - loss: 0.6899 - accuracy: 0.5774 - val_loss: 0.6707 - val_accuracy: 0.7885<br>
 Epoch 2/30<br>
- - 0s - loss: 0.6679 - accuracy: 0.5957 - val_loss: 0.5919 - val_accuracy: 0.7885<br>
+  0s - loss: 0.6679 - accuracy: 0.5957 - val_loss: 0.5919 - val_accuracy: 0.7885<br>
  ......<br>
  Epoch 29/30<br>
- - 0s - loss: 0.4455 - accuracy: 0.7946 - val_loss: 0.4165 - val_accuracy: 0.8173<br>
+  0s - loss: 0.4455 - accuracy: 0.7946 - val_loss: 0.4165 - val_accuracy: 0.8173<br>
 Epoch 30/30<br>
- - 0s - loss: 0.4522 - accuracy: 0.7914 - val_loss: 0.4162 - val_accuracy: 0.8173<br>
+  0s - loss: 0.4522 - accuracy: 0.7914 - val_loss: 0.4162 - val_accuracy: 0.8173<br>
