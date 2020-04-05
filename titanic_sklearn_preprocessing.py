@@ -15,12 +15,16 @@ ndarray = x_OneHot_df.values #dataframe convert array
 Label=ndarray[:0] #:=all 0=number 0 data field
 Features=ndarray[:,1:] #:=all 1:=number 1 data field to the last
 
+#preprocessing
+
 from sklearn import preprocessing
-minmax_scale = preprocessing.MinMaxScaler(feature_range=(0, 1))
-scaledFeatures=minmax_scale.fit_transform(Features)
-msk = numpy.random.rand(len(all_df)) < 0.8
-train_df = all_df[msk]
-test_df = all_df[~msk]
+minmax_scale = preprocessing.MinMaxScaler(feature_range=(0, 1)) #preprocessing.MinMaxScalerSet is preprocessing Min and Max
+#feature range between 0 and 1
+scaledFeatures=minmax_scale.fit_transform(Features) #import Features to minmax_scale.fit_transform to preprocessing
+msk = numpy.random.rand(len(all_df)) < 0.8 #8:2 to msk
+train_df = all_df[msk] #train 80%
+test_df = all_df[~msk] #test 20%
+
 def PreprocessData(raw_df):
     df=raw_df.drop(['name'], axis=1)
     age_mean = df['age'].mean()
