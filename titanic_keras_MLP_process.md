@@ -97,6 +97,7 @@ show_train_history(train_history,'loss','val_loss')
   
 scores = model.evaluate(x=test_Features,  
                        y=test_Label)  
+#Check Accuracy
   
 Out:  
 275/275 [==============================] - 0s 18us/step  
