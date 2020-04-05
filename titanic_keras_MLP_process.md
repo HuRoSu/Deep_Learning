@@ -97,8 +97,10 @@ show_train_history(train_history,'loss','val_loss')
   
 scores = model.evaluate(x=test_Features,  
                        y=test_Label)  
+  
 Out:  
 275/275 [==============================] - 0s 18us/step  
+  
 scores[1]  
 Out:  
 0.807272732257843  
