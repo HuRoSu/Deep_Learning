@@ -78,3 +78,12 @@ Epoch 2/30<br>
   0s - loss: 0.4455 - accuracy: 0.7946 - val_loss: 0.4165 - val_accuracy: 0.8173<br>
 Epoch 30/30<br>
   0s - loss: 0.4522 - accuracy: 0.7914 - val_loss: 0.4162 - val_accuracy: 0.8173<br>
+
+#Check
+scores = model.evaluate(x=test_Features,  
+                       y=test_Label)  
+Out:  
+275/275 [==============================] - 0s 18us/step  
+scores[1]  
+Out:  
+0.807272732257843  
