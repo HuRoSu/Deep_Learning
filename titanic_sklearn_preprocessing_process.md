@@ -34,7 +34,7 @@ array([[0.        , 0.        , 0.36116884, 0.        , 0.        ,<br>
 `      'train:',len(train_df),`<br>
 `      'test:',len(test_df))`<br>
 Out:<br>
-total: 1309 train: 1059 test: 250 #random<br>
+total: 1309 train: 1059 test: 250 #train and test is random<br>
 <br>
 <br>
 `def PreprocessData(raw_df):`<br>
