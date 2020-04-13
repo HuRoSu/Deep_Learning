@@ -4,7 +4,7 @@ filepath="data/titanic3.xls"
 all_df = pd.read_excel(filepath)
 cols=['survived','name','pclass','sex','age','sibsp','parch','fare','embarked']
 all_df=all_df[cols]
-df = all_df.drop(['name'],axis=1)
+df = all_df.drop(['name'],axis=1) #axis 1 left to right axis 0 up to down
 age_mean = df['age'].mean() #average null age
 df['age'] = df['age'].fillna(age_mean) #fill the null
 fare_mean = df['fare'].mean() #average null fare
